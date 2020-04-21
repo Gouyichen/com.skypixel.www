@@ -109,7 +109,7 @@ min-width: 1200px;
       margin-top: 40px;
       width: 1200px;
       height: 208px;
-      background-color: pink;
+      background-color: #fff;
   }
   .re-meng .top{
       height: 32px;
@@ -120,23 +120,43 @@ min-width: 1200px;
       font-weight: 600;
   }
   .re-meng ul{
-      height: 180px;
+      height: 154px;
       width: 1200px;
       text-emphasis: none;
   }
   .re-meng ul li{
-      
+      float: left;
+      margin-right: 20px;
       width: 180px;
       height: 156px;
       background-color: #fff;
   }
-  .re-meng ul li img{
+  .re-meng ul li .fhl{
       width: 180px;
-      height: 120px;
+      height: 156px;
+      overflow: hidden;
   }
+
+  .re-meng ul li img{
+     height: 100%;
+     width: 100%;
+  }
+  .re-meng ul li .fhl:hover img{
+      transform: scale(1.5);
+      transition: all 1s;
+  }
+  /* .re-meng ul li img:hover{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 180px*2;
+    height: 120px*2;
+  } */
   .re-meng ul li div{
-      height: 24px;
-      margin-top: 8px;
+    font-size: 16px;
+    height: 24px;
+    margin-top: 8px;
   }
 
 
