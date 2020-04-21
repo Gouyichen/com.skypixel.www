@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+    <link rel="stylesheet" href="./lib/swiper.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    
+    <!-- 顶部 -->
+    <header>
+        <!-- 左面 -->
+        <div></div>
+        <!-- 中间 -->
+        <div class="center">
+            <a href="" class="one">首页</a>
+            <a href="">探索</a>
+            <a href="">标签</a>
+            <a href="">摄影师</a>
+            <a href="">签约摄影师招募</a>
+        </div>
+        <!-- 右面 -->
+        <div class="right">
+            <!-- <div> -->
+            <input type="text">
+            <button>
+                <svg t="1587439116953" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="2043" id="mx_n_1587439116954" width="20" height="20">
+                    <path
+                        d="M889.6 838.4l-192-192C742.4 595.2 768 524.8 768 448c0-179.2-140.8-320-320-320S128 268.8 128 448s140.8 320 320 320c76.8 0 147.2-25.6 198.4-70.4l192 192c12.8 12.8 32 12.8 44.8 0C896 876.8 896 851.2 889.6 838.4zM192 448c0-140.8 115.2-256 256-256s256 115.2 256 256c0 140.8-115.2 256-256 256S192 588.8 192 448z"
+                        p-id="2044" fill="#8a8a8a"></path>
+                </svg>
+            </button>
+            <!-- </div> -->
+            <a href=""><img src="" alt=""></a>
+            <a href="" class="a2">登录</a>
+            <a href="">注册</a>
+
+
+
+        </div>
+    </header>
+
+    <!-- 幻灯片的容器 -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" date-swipe-autoplay="8000">
+                <a href=""><img src="./images/dlb1.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide" date-swipe-autoplay="8000">
+                <a href=""><img src="./images/dlb2.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide" date-swipe-autoplay="8000">
+                <a href=""><img src="./images/dlb3.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide" date-swipe-autoplay="8000">
+                <a href=""><img src="./images/dlb4.jpg" alt=""></a>
+            </div>
+            <div class="swiper-slide" date-swipe-autoplay="8000">
+                <a href=""><img src="./images/dlb5.jpg" alt=""></a>
+            </div>
+            ...
+        </div>
+        <!-- 分页 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <!-- 热门博拍点 -->
+    <div class="re-meng">
+        <div class="ban-xin">
+            <div class="top">
+                <span>热门航拍点</span>
+            </div>
+            <ul>
+                <li>
+                    <img src="./images/rm1.jpeg@!1200" alt="">
+                    <div>上海</div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 3000,
+            spaceBetween: 0,
+            autoplay: { delay: 100 },
+            flipEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            parallax: true
+        });
+
+    </script>
 </body>
+
 </html>
