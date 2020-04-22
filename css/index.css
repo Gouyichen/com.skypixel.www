@@ -108,7 +108,6 @@ min-width: 1200px;
       margin: 0 auto;
       margin-top: 40px;
       width: 1200px;
-      height: 208px;
       background-color: #fff;
   }
   .re-meng .top{
@@ -126,20 +125,25 @@ min-width: 1200px;
   }
   .re-meng ul li{
       float: left;
-      margin-right: 20px;
+      margin-right: 24px;
       width: 180px;
       height: 156px;
       background-color: #fff;
   }
+  .re-meng ul li:last-child{
+      margin-right: 0;
+  }
   .re-meng ul li .fhl{
       width: 180px;
-      height: 156px;
+      height: 120px;
       overflow: hidden;
+      margin-top: 0;
   }
 
   .re-meng ul li img{
      height: 100%;
      width: 100%;
+     vertical-align: middle;
   }
   .re-meng ul li .fhl:hover img{
       transform: scale(1.5);
@@ -167,4 +171,31 @@ min-width: 1200px;
 
 
 
-/* 第二部分 */
+/* 精选部分 */
+.jing-xue{
+    padding: 72px 0 0;
+}
+.jing-xue .j-x{
+    text-align: center;
+    height: 60px;
+    width: 1200px;
+    line-height: 60px;
+    font-size: 14;
+    
+
+}
+.jing-xue .j-x .j{
+    border-bottom: 3px solid royalblue;
+    display: inline-block;
+    font-weight: 600;
+}
+.jin-in{
+    background-color: #f7f8f9;
+}
+.jing-xue .bx-color{
+    padding: 40px 0;
+}
+.jing-xue .xiao-biao-ti{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
